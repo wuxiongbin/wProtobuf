@@ -1,0 +1,154 @@
+syntax = "proto3";
+package NetProto;
+
+message Double
+{
+	double value = 1;
+}
+
+message Doubles
+{
+	repeated double value = 1;
+}
+
+message Float
+{
+	float value = 1;
+}
+
+message Floats
+{
+	repeated float value = 1;
+}
+
+message UInt64
+{
+	uint64 value = 1;
+}
+
+message UInt64s
+{
+	repeated uint64 value = 1;
+}
+
+message Int32
+{
+	int32 value = 1;
+}
+
+message Int32s
+{
+	repeated int32 value = 1;
+}
+
+message UInt32
+{
+	uint32 value = 1;
+}
+
+message UInt32s
+{
+	repeated uint32 value = 1;
+}
+
+message Int64
+{
+	int64 value = 1;
+}
+
+message Int64s
+{
+	repeated int64 value = 1;
+}
+
+message Fixed32
+{
+	fixed32 value = 1;
+}
+
+message Fixed32s
+{
+	repeated fixed32 value = 1;
+}
+
+message sFixed32
+{
+	sfixed32 value = 1;
+}
+
+message sFixed32s
+{
+	repeated sfixed32 value = 1;
+}
+
+message Fixed64
+{
+	fixed64 value = 1;
+}
+
+message Fixed64s
+{
+	repeated fixed64 value = 1;
+}
+
+message sFixed64
+{
+	sfixed64 value = 1;
+}
+
+message sFixed64s
+{
+	repeated sfixed64 value = 1;
+}
+
+message Bool
+{
+	bool value = 1;
+}
+
+message Str
+{
+	string value = 1;
+}
+
+message sInt32
+{
+	sint32 value = 1;
+}
+
+message sInt32s
+{
+	repeated sint32 value = 1;
+}
+
+message sInt64
+{
+	sint64 value = 1;
+}
+
+message sInt64s
+{
+	repeated sint64 value = 1;
+}
+
+message Bytes
+{
+	bytes value = 1;
+}
+
+message Point3
+{
+	float x = 1;
+	float y = 2;
+	float z = 3;
+}
+
+message Empty
+{
+
+}
+
+message Map
+{
+	map<sfixed32, Point3> point3map = 1;
+}
