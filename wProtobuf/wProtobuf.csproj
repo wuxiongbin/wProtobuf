@@ -40,8 +40,6 @@
     <Compile Include="Src\ByteArray.cs" />
     <Compile Include="Src\ByteString.cs" />
     <Compile Include="Src\ComputeSize.cs" />
-    <Compile Include="Src\CoroutineUitlity.cs" />
-    <Compile Include="Src\ICoroutine.cs" />
     <Compile Include="Src\IMessage.cs" />
     <Compile Include="Src\InvalidProtocolBufferException.cs" />
     <Compile Include="Src\IStream.cs" />

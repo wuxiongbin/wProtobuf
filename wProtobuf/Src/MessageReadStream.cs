@@ -135,19 +135,15 @@ namespace wProtobuf
         {
             if (BitConverter.IsLittleEndian)
             {
+                CheckReadSize(4);
                 float ret = BitConverter.ToSingle(mBuffer, mReadPos);
                 mReadPos += 4;
                 return ret;
             }
             else
             {
-                CheckReadSize(4);
-
                 byte[] rawBytes = ReadRawBytes(4);
-                if (!BitConverter.IsLittleEndian)
-                {
-                    ByteArray.Reverse(rawBytes);
-                }
+                ByteArray.Reverse(rawBytes);
                 return BitConverter.ToSingle(rawBytes, 0);
             }
         }
